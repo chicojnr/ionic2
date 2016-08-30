@@ -6,10 +6,11 @@ import { HomePage } from './pages/home/home';
 
 
 @Component({
-  template: '<ion-nav [root]="rootPage"></ion-nav>'
+  templateUrl: 'build/app.html'
 })
 export class MyApp {
-  rootPage: any = HomePage;
+  home: any = HomePage;
+  rootPage: any = this.home;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
@@ -18,6 +19,13 @@ export class MyApp {
       StatusBar.styleDefault();
     });
   }
+
+  openPage(page) {
+    this.rootPage = page;
+  }
+  
 }
+
+
 
 ionicBootstrap(MyApp);
