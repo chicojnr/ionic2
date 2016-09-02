@@ -7,10 +7,10 @@ import { Injectable, Pipe } from '@angular/core';
   Angular 2 Pipes.
 */
 @Pipe({
-  name: 'lower-case'
+  name: 'paraMinusculo'
 })
 @Injectable()
-export class LowerCase {
+export class ParaMinusculo {
   /*
     Takes a value and makes it lowercase.
    */
