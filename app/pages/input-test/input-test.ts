@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 
 /*
   Generated class for the InputTestPage page.
@@ -12,8 +12,16 @@ import { NavController } from 'ionic-angular';
 })
 export class InputTestPage {
 
-  constructor(private navCtrl: NavController) {
+  login: string;
+  senha: string;
+  constructor(private navCtrl: NavController, private alertCtrl: AlertController) { }
 
+  entrar() {
+    let alert = this.alertCtrl.create({
+      title: 'Entrando...',
+      message: 'Login ' + this.login + ', Senha: ' + this.senha
+    });
+    alert.present();
   }
 
 }

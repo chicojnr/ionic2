@@ -19,17 +19,18 @@
 <ion-content padding>
 <ion-list>
   <ion-item>
-    <ion-label floating>
-      Login
-    </ion-label>
-    <ion-input name="login"></ion-input>
+    <ion-label floating>Login</ion-label>
+    <ion-input name="login" [(ngModel)]="login"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>
       Senha
     </ion-label>
-    <ion-input name="senha" type="password"></ion-input>
+    <ion-input name="senha" type="password" [(ngModel)]="senha"></ion-input>
   </ion-item>
 </ion-list>
+<button block (click)="entrar()">Entrar</button>
+<p>Login: {{login}}</p>
+<p>Senha: {{senha}}</p>
 </ion-content>
