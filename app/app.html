@@ -6,6 +6,12 @@
     <button ion-item (click)="openPage(home)" menuClose>
       Home
     </button>
+    <button ion-item (click)="openPage(tab)" menuClose>
+      Abas
+    </button>
+    <button ion-item (click)="openPage(navigation)" menuClose>
+      Navigation
+    </button>
     <button ion-item (click)="openPage(modal)" menuClose>
       Modal
     </button>
@@ -36,4 +42,4 @@
   </ion-content>
 </ion-menu>
 
-<ion-nav [root]="rootPage" #content></ion-nav>
+<ion-nav swipeBackEnabled="true" [root]="rootPage" #content></ion-nav>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 /*
   Generated class for the CardTestPage page.
@@ -12,8 +12,12 @@ import { NavController } from 'ionic-angular';
 })
 export class CardTestPage {
 
-  constructor(private navCtrl: NavController) {
+  constructor(private navCtrl: NavController, public params: NavParams) {
+    console.log('Menssagem: ', params.get('menssagem'));
+  }
 
+  voltar() {
+    this.navCtrl.pop();
   }
 
 }

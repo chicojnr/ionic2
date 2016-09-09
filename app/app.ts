@@ -12,6 +12,8 @@ import { InputTestPage} from './pages/input-test/input-test';
 import { ListTestPage} from './pages/list-test/list-test';
 import { GridTestPage} from './pages/grid-test/grid-test';
 import { ModalTestPage} from './pages/modal-test/modal-test';
+import { NavigationTestPage} from './pages/navigation-test/navigation-test';
+import { TabTestPage} from './pages/tab-test/tab-test';
 
 
 @Component({
@@ -28,7 +30,11 @@ export class MyApp {
   list: any = ListTestPage;
   grid: any = GridTestPage;
   modal: any = ModalTestPage;
+  navigation: any = NavigationTestPage;
+  tab: any = TabTestPage;
+
   rootPage: any = this.home;
+
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
