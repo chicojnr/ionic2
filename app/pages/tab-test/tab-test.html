@@ -1,11 +1,4 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Abas</ion-title>
-  </ion-navbar>
-
-
-  <ion-tabs>
-    <ion-tab tabTitle="Home" [root]="homePage"></ion-tab>
-    <ion-tab tabTitle="Contatos" [root]="contatosPage"></ion-tab>
-  </ion-tabs>
-</ion-header>
+<ion-tabs tabsPlacement="top" class="withNavbar">
+  <ion-tab tabIcon="home" tabTitle="Home" [root]="homePage"></ion-tab>
+  <ion-tab tabIcon="contacts" tabTitle="Contatos" tabBadge="5" tabBadgeStyle="danger" [root]="contatosPage"></ion-tab>
+</ion-tabs>
