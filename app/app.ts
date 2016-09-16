@@ -15,6 +15,7 @@ import { ModalTestPage} from './pages/modal-test/modal-test';
 import { NavigationTestPage} from './pages/navigation-test/navigation-test';
 import { TabTestPage} from './pages/tab-test/tab-test';
 import { ToastTestPage} from './pages/toast-test/toast-test';
+import { ToolbarTestPage} from './pages/toolbar-test/toolbar-test';
 
 
 @Component({
@@ -34,6 +35,7 @@ export class MyApp {
   navigation: any = NavigationTestPage;
   tab: any = TabTestPage;
   toast: any = ToastTestPage;
+  toolbar: any = ToolbarTestPage;
 
   rootPage: any = this.home;
 
